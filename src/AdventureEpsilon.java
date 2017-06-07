@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class AdventureEpsilon
 {
+	public static Book theBook = new Book();
 	public static GameRoom theRoom = new GameRoom();
 	public static Box theBox = new Box();
 	public static Sign theSign = new Sign();
@@ -10,6 +11,8 @@ public class AdventureEpsilon
 		//Populate the room
 		theRoom.addThing(theBox);
 		theRoom.addThing(theSign);
+		theRoom.addThing(theBook);
+
 
 		//Create additional useful objects
 		Scanner keyboard = new Scanner(System.in); 
